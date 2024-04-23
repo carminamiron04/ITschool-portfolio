@@ -1,0 +1,175 @@
+/* start of user agent reset*/
+body, 
+h1, 
+h2, 
+p, 
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+/*End of User Agent Reset*/
+
+body{
+    font-family:"roboto", sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #fafafa;
+}
+.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/*end of user agent reset*/
+
+header, footer{
+    background-color: #525293;
+    color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*text-align: center; ToDo: remove this */
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+header h1,
+header h2 {
+    text-align: center;
+}
+
+nav {
+    padding-top: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+.section-title{
+    color: #525293
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.separator-area {
+    background-color:#525293;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;;
+
+}
+
+.separator-area * {
+    color:#fafafa
+}
+
+/* Form */
+.contact-form {
+    padding:20px 0;
+
+}
+
+.contact-form *{
+    display:block;
+}
+
+.contact-form label {
+    font-weight: 500;
+    font-size: smaller;
+}
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact-form input[type='submit'] {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius:10px ;
+    background-color: transparent;
+    border: 2px solid #525293;
+    color: #525293;
+}
+
+.contact-form input[type='submit']:hover {
+    background-color:#525293;
+    border: 2 px solid transparent;
+    color: #fafafa;
+
+}
+
+.card{
+    display: inline-block;
+    width: calc(25% - calc(10px + 12px)); /*extra 4px cause we have 4 elem */
+    margin: 0 5px; /*total of 10 px */
+    border : 1px solid #525293;
+    border-radius: 10px ;
+}
+
+.button-primary:hover {
+    background-color: #525293;
+    border: 2px solid transparent;
+    color:#fafafa;
+}
+
+.card-title {
+    text-align: center;
+    font-size: solid 18px;
+    background: -webkit-linear-gradient(rgb(170, 0, 233), rgba(185, 0, 108, 0.927), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-description {
+    text-align: center;
+}
+
+/*media Query*/
+@media screen and (max-width:1000px) {
+    .separator-area{
+        display: none;
+    }
+    .card {
+        width:calc(50% - calc(10px + 12px))
+    }
+}
+
+/*Media Query*/
+@media only screen and (max-width:480px) {
+    .card {
+        width: calc(100% - calc(10px + 12px));
+    }
+}
+
+.card-container {
+    display: flex;
+
+}

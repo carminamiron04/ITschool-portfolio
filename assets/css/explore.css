@@ -1,0 +1,50 @@
+body,
+h2, 
+p {
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title1 {
+    text-align: center;
+    color:black;
+    font-size: solid;
+}
+
+nav {
+    padding-top: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+}
+
+body{
+    font-family:"roboto", sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: #525293;
+    color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*text-align: center; ToDo: remove this */
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 0;
+}
